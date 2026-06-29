@@ -1,219 +1,77 @@
-<!-- saved from url=(0014)about:internet -->
-<html lang="en" itemscope itemtype="http://schema.org/Book">
-
-<!-- 
-Smart developers always View Source. 
-
-This application was built using Adobe Flex, an open source framework
-for building rich Internet applications that get delivered via the
-Flash Player or to desktops via Adobe AIR. 
-
-Learn more about Flex at http://flex.org 
-// -->
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta property="og:image" content="content/medium/page1.jpg"/>
-<meta property="og:image" content="content/medium/page2.jpg"/>
-<meta property="og:image" content="content/medium/page3.jpg"/>
-<meta property="og:image" content="content/medium/page4.jpg"/>
-<meta property="og:image" content="content/medium/page5.jpg"/>
-<meta property="og:image:width" content="768" /> 
-<meta itemprop="image" content="content/thumbs/thumb1.jpg">
-<!--  BEGIN Browser History required section -->
-<link rel="stylesheet" type="text/css" href="history/history.css" />
-<!--  END Browser History required section -->
-
-<title>atlas-amozesh</title>
-<script src="AC_OETags.js" language="javascript"></script>
-
-<!--  BEGIN Browser History required section -->
-<script src="history/history.js" language="javascript"></script>
-<!--  END Browser History required section -->
-
-<style type="text/css">
-  body { margin: 0px;
-         overflow:hidden;
-         background-color: #454545 ;
-	 background-image: url(content/images/iconZip.gif);
-         background-repeat:no-repeat;
-         background-position:center;
-       }
-        
-</style>
-
-<script type="text/javascript">
-  var errorName = null;
-    function isBrowserSupportPlugin() {
-        var supported = null; 
-        try {
-            new ActiveXObject("");
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="index_files/ol.css">
+        <link rel="stylesheet" href="index_files/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css" href="index_files/horsey.min.css">
+        <link rel="stylesheet" type="text/css" href="index_files/ol-search-layer.min.css">
+        <link href="index_files/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index_files/ol-layerswitcher.css">
+        <link rel="stylesheet" href="index_files/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
         }
-        catch (e) {
-            // FF has ReferenceError here
-            errorName = e.name; 
-        }     
-        try {
-            supported = !!new ActiveXObject("htmlfile");
-        } catch (e) {
-            supported = false;
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
         }
-        if(errorName != 'ReferenceError' && supported==false){
-            supported = false;
-        }else{
-            supported =true;
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
         }
-        return supported;
-    }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
 
-  function isMetroIE() {
-    var matchIE = /MSIE\s([\d.]+)/;
-    if ((matchIE.test(navigator.userAgent)) && !isBrowserSupportPlugin())
-      return true;
-    else 
-      return false;
-  }
-  
-  var iRegex = /android|(iP(hone|ad))/i;
-  if (iRegex.test(navigator.userAgent) || isMetroIE()){
-      var url= "html5.html?", i=document.location.href.indexOf('?'); url+= i==-1 ? 'page=1' : document.location.href.substr(i+1);
-      if( false &&  window.parent)
-         window.parent.location=url;
-      else
-         window.location =url;
-   }
-</script>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            
+        <div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 100%; height: 100%; z-index: 0;" class="ol-unselectable ol-layers"><div class="ol-layer" style="position: absolute; width: 100%; height: 100%;"><canvas style="position: absolute; left: 0px; transform-origin: left top 0px; transform: matrix(0.666667, 0, 0, 0.666667, 0, -0.166667);" width="1920" height="893"></canvas></div></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%; pointer-events: none;" class="ol-overlaycontainer"></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%; pointer-events: none;" class="ol-overlaycontainer-stopevent"><div class="ol-overlay-container ol-selectable" style="position: absolute; pointer-events: auto; transform: translate(0%, 0%) translate(545.333px, 475.067px);"><div id="popup" class="ol-popup" style="display: none;">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"><ul><li><a><b>sea</b></a><table><tbody><tr><td colspan="2">0</td></tr><tr><td colspan="2">151,176,014,668.466</td></tr><tr><td colspan="2">2,380,328.369</td></tr><tr><td colspan="2">37,356,257.34</td></tr><tr><td colspan="2">15,117,601.467</td></tr></tbody></table></li></ul></div>
+            </div></div><div style="pointer-events: auto;" class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass" style="transform: rotate(0rad);">⇧</span></button></div><div style="pointer-events: auto;" class="ol-attribution ol-unselectable ol-control ol-collapsed"><button type="button" aria-expanded="false" title="Attributions"><span class="ol-attribution-expand">i</span></button><ul><li> </li></ul></div><div id="top-left-container" style="pointer-events: auto;"><div style="pointer-events: auto;" class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">–</button></div><div class="ol-unselectable ol-control geolocate"><button class="geolocate-button fa fa-map-marker" title="Geolocalizza"></button></div><div class="ol-unselectable ol-control measure-control"><button class="measure-button fas fa-ruler" title="Measure"></button><label style="display: none;">&nbsp;Measure:&nbsp;<select id="type"><option value="LineString" selected="selected">Length</option><option value="Polygon">Area</option></select></label></div><div class="search-layer ol-unselectable ol-control" style="pointer-events: auto;"><button class=" fa fa-binoculars"></button><form id="random"><input id="ol-search-input" class="search-layer-input-search search-layer-collapsed" placeholder="Search feature ..." type="text" autocomplete="off"></form></div></div><div id="bottom-left-container" style="pointer-events: auto;"></div><div id="top-right-container" style="pointer-events: auto;"><div class="ol-unselectable ol-control layer-switcher layer-switcher-group-select-style-children layer-switcher-activation-mode-mouseover"><button title="Layers" aria-label="Layers"></button><div class="panel"><ul><li class="layer"><input type="checkbox" id="6d3de011-513b-43f1-a7da-ddde4ac08c89" checked="checked"><label for="6d3de011-513b-43f1-a7da-ddde4ac08c89"><img src="index_files/sea_2.png"> sea</label></li><li class="layer"><input type="checkbox" id="55546b4a-b069-4b0e-a249-670fd60baa31" checked="checked"><label for="55546b4a-b069-4b0e-a249-670fd60baa31"><img src="index_files/city_1.png"> city</label></li><li class="layer"><input type="checkbox" id="44f723a0-705e-4482-b00a-f1b2df419f8b" checked="checked"><label for="44f723a0-705e-4482-b00a-f1b2df419f8b"><img src="index_files/iran_ostan_0.png"> iran_ostan</label></li></ul></div></div></div><div id="bottom-right-container" style="pointer-events: auto;"><div style="pointer-events: auto;" class="bottom-attribution ol-unselectable ol-control ol-uncollapsible"><button type="button" aria-expanded="true" title="Attributions"><span class="bottom-attribution-expand">i</span></button><ul><li>
+    <a href="https://github.com/qgis2web/qgis2web">qgis2web</a> ·
+    <a href="https://openlayers.org/">OpenLayers</a> ·
+    <a href="https://qgis.org/">QGIS</a></li></ul></div></div></div></div></div>
+        <script src="index_files/qgis2web_expressions.js"></script>
+<script src="index_files/proj4.js"></script>
+        <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
+        <script src="index_files/functions.js"></script>
+        <script src="index_files/ol.js"></script>
+        <script src="index_files/horsey.min.js"></script>
+        <script src="index_files/ol-search-layer.js"></script>
+        <script src="index_files/ol-layerswitcher.js"></script>
+        <script src="index_files/photon-geocoder-autocomplete.min.js"></script>
+        <script src="index_files/olms.js"></script>
+        <script src="index_files/iran_ostan_0.js"></script><script src="index_files/city_1.js"></script><script src="index_files/sea_2.js"></script>
+        <script src="index_files/iran_ostan_0_style.js"></script><script src="index_files/city_1_style.js"></script><script src="index_files/sea_2_style.js"></script>
+        <script src="index_files/layers.js" type="text/javascript"></script> 
+        <script src="index_files/Autolinker.min.js"></script>
+        <script src="index_files/qgis2web.js"></script><div class="sey-container" style="left: 0px; top: 0px;"><div class="sey-categories"></div></div>        
+    
 
-
-<script language="JavaScript" type="text/javascript">
-
-var url= "index-h5.html#", i=document.location.href.indexOf('?'); url+= i==-1 ? 'page=1' : document.location.href.substr(i+1);
-
-if( false &&  window.parent)
-   window.parent.location=url;
-else
-   window.location =url;
-
-<!--
-// -----------------------------------------------------------------------------
-// Globals
-// Major version of Flash required
-var requiredMajorVersion = 10;
-// Minor version of Flash required
-var requiredMinorVersion = 0;
-// Minor version of Flash required
-var requiredRevision = 0;
-// -----------------------------------------------------------------------------
-// -->
-</script>
-</head>
-
-<body scroll="no" onload="setBrowserFocus()">
-<script language="JavaScript" type="text/javascript">
-<!--
-
-function closeMe(){return window.close();}
-
-var gotoPage = function(page){
-	if (navigator.appName.indexOf("Microsoft") != -1) {
-		return window['main'].gotoPage(page);
-	}
-	else {
-		return document['main'].gotoPage(page);
-	}
-}
-
-// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
-var hasProductInstall = DetectFlashVer(6, 0, 65);
-
-// Version check based upon the values defined in globals
-var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
-
-function getparafromurl() {
-    var url,pos,parastr,para;
-    url = window.location.href;
-    pos = url.indexOf("?")
-    parastr = url.substring(pos+1);
-    return parastr;
-}
-
-function setBrowserFocus(){ document.getElementById('main').focus();}
-
-if ( hasProductInstall && !hasRequestedVersion ) {
-	// DO NOT MODIFY THE FOLLOWING FOUR LINES
-	// Location visited after installation is complete if installation is required
-	var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
-	var MMredirectURL = window.location;
-    document.title = document.title.slice(0, 47) + " - Flash Player Installation";
-    var MMdoctitle = document.title;
-
-	AC_FL_RunContent(
-		"src", "playerProductInstall",
-		"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+"",
-		"width", "100%",
-		"height", "100%",
-		"align", "middle",
-		"id", "main",
-		"quality", "high",
-		"allowFullScreen","true",
-		"FlashVars", getparafromurl(),
-		"bgcolor", "#ffffff",
-		"name", "main",
-		"allowScriptAccess","sameDomain",
-		"type", "application/x-shockwave-flash",
-		"pluginspage", "http://www.adobe.com/go/getflashplayer"
-	);
-} else if (hasRequestedVersion) {
-	// if we've detected an acceptable version
-	// embed the Flash Content SWF when all tests are passed
-	AC_FL_RunContent(
-			"src", "main?page=1",
-			"width", "100%",
-			"height", "100%",
-			"align", "middle",
-			"allowFullScreen","true",
-			"id", "main",
-			"FlashVars", getparafromurl(),
-			"quality", "high",
-			"bgcolor", "#ffffff",
-			"name", "main",
-			"allowScriptAccess","sameDomain",
-			"type", "application/x-shockwave-flash",
-			"pluginspage", "http://www.adobe.com/go/getflashplayer"
-	);
-  } else {  // flash is too old or we can't detect the plugin
-    var alternateContent = 'Adobe Flash Player not detected. '
-   	+ 'Redirecting to HTML5 version';
-    document.write(alternateContent);  // insert non-flash content
-
-    var url= "index-h5.html#", i=document.location.href.indexOf('?'); url+= i==-1 ? 'page=1' : document.location.href.substr(i+1);
-    if( false &&  window.parent)
-       window.parent.location=url;
-    else
-       window.location =url;
-  }
-// -->
-</script>
-<noscript>
-  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-			id="main" width="100%" height="100%"
-			codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
-			<param name="movie" value="main.swf" />
-			<param name="quality" value="high" />
-			<param name="allowFullScreen" value="true" />
-			<param name="bgcolor" value="#ffffff" />
-			<param name="allowScriptAccess" value="sameDomain" />
-			<embed src="main.swf" quality="high" bgcolor="#ffffff"
-				width="100%" height="100%" name="main" align="middle"
-				play="true"
-				loop="false"
-				allowFullScreen="true"
-				quality="high"
-				allowScriptAccess="sameDomain"
-				type="application/x-shockwave-flash"
-				pluginspage="http://www.adobe.com/go/getflashplayer">
-			</embed>
-	</object>
-</noscript>
-</body>
-</html>
+</body></html>
