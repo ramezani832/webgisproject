@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d13a39d2408f11267e5a0a9918bd2129 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d13a39d2408f11267e5a0a9918bd2129" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d13a39d2408f11267e5a0a9918bd2129 = L.map(
+                "map_d13a39d2408f11267e5a0a9918bd2129",
+                {
+                    center: [32.4279, 53.688],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b6e6b848d5728d2db609169124ff2d52 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b6e6b848d5728d2db609169124ff2d52.addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+            var circle_marker_2d6b46ef5b32200e794e597a5baf7e0f = L.circleMarker(
+                [35.6892, 51.389],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.4, "stroke": true, "weight": 1}
+            ).addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+        var popup_f96db34bed54a346bd17de2f41ec7b40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27c1d496e80667202877847b66eb3885 = $(`<div id="html_27c1d496e80667202877847b66eb3885" style="width: 100.0%; height: 100.0%;">تهران<br>جمعیت: 13,400,000 نفر</div>`)[0];
+                popup_f96db34bed54a346bd17de2f41ec7b40.setContent(html_27c1d496e80667202877847b66eb3885);
+            
+        
+
+        circle_marker_2d6b46ef5b32200e794e597a5baf7e0f.bindPopup(popup_f96db34bed54a346bd17de2f41ec7b40)
+        ;
+
+        
+    
+    
+            var circle_marker_3e9e5fe008932e855c953dee1c9c78c9 = L.circleMarker(
+                [36.563, 53.06],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.28, "stroke": true, "weight": 1}
+            ).addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+        var popup_ec6eb59b4a4c46f64e259046b5b72193 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab44987e3a5b260febaf4749e7223cee = $(`<div id="html_ab44987e3a5b260febaf4749e7223cee" style="width: 100.0%; height: 100.0%;">مازندران<br>جمعیت: 3,280,000 نفر</div>`)[0];
+                popup_ec6eb59b4a4c46f64e259046b5b72193.setContent(html_ab44987e3a5b260febaf4749e7223cee);
+            
+        
+
+        circle_marker_3e9e5fe008932e855c953dee1c9c78c9.bindPopup(popup_ec6eb59b4a4c46f64e259046b5b72193)
+        ;
+
+        
+    
+    
+            var circle_marker_93a6581574521034a760fe64e588db0f = L.circleMarker(
+                [37.2808, 49.589],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.53, "stroke": true, "weight": 1}
+            ).addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+        var popup_a646d035a36ab00a1827081b35c3d686 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97064f54ac849b8464674417ed449aac = $(`<div id="html_97064f54ac849b8464674417ed449aac" style="width: 100.0%; height: 100.0%;">گیلان<br>جمعیت: 2,530,000 نفر</div>`)[0];
+                popup_a646d035a36ab00a1827081b35c3d686.setContent(html_97064f54ac849b8464674417ed449aac);
+            
+        
+
+        circle_marker_93a6581574521034a760fe64e588db0f.bindPopup(popup_a646d035a36ab00a1827081b35c3d686)
+        ;
+
+        
+    
+    
+            var circle_marker_11ed73997a8bb0ea8d80535a6855b19f = L.circleMarker(
+                [31.8974, 54.3569],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.138, "stroke": true, "weight": 1}
+            ).addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+        var popup_fd1fa7d7c761c1c491ef1676d4bd7c0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af10146a2a2d2a4a3645e9045b7952fb = $(`<div id="html_af10146a2a2d2a4a3645e9045b7952fb" style="width: 100.0%; height: 100.0%;">یزد<br>جمعیت: 1,138,000 نفر</div>`)[0];
+                popup_fd1fa7d7c761c1c491ef1676d4bd7c0d.setContent(html_af10146a2a2d2a4a3645e9045b7952fb);
+            
+        
+
+        circle_marker_11ed73997a8bb0ea8d80535a6855b19f.bindPopup(popup_fd1fa7d7c761c1c491ef1676d4bd7c0d)
+        ;
+
+        
+    
+    
+            var marker_84b41aa8e4ca51cfd1cbf592cea70317 = L.marker(
+                [32.4279, 53.688],
+                {
+}
+            ).addTo(map_d13a39d2408f11267e5a0a9918bd2129);
+        
+    
+            var icon_5840f79dab46151d06ebeecfb7f1d48f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6161126c8a0d3fdf1d43481f692dc062 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9655c884c9af8e763f86f31226ec2acc = $(`<div id="html_9655c884c9af8e763f86f31226ec2acc" style="width: 100.0%; height: 100.0%;">مرکز ایران</div>`)[0];
+                popup_6161126c8a0d3fdf1d43481f692dc062.setContent(html_9655c884c9af8e763f86f31226ec2acc);
+            
+        
+
+        marker_84b41aa8e4ca51cfd1cbf592cea70317.bindPopup(popup_6161126c8a0d3fdf1d43481f692dc062)
+        ;
+
+        
+    
+    
+                marker_84b41aa8e4ca51cfd1cbf592cea70317.setIcon(icon_5840f79dab46151d06ebeecfb7f1d48f);
+            
+    
+            var mouse_position_c7a856442466a8872d2244a6e3e60c2b = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_c7a856442466a8872d2244a6e3e60c2b.options["latFormatter"] =
+                undefined;
+            mouse_position_c7a856442466a8872d2244a6e3e60c2b.options["lngFormatter"] =
+                undefined;
+            map_d13a39d2408f11267e5a0a9918bd2129.addControl(mouse_position_c7a856442466a8872d2244a6e3e60c2b);
+        
+</script>
+</html>
